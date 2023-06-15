@@ -2,12 +2,12 @@
 
 namespace Generics_Console
 {
-    class PrintService
+    class PrintService<T>
     {
-        private int[] _value = new int[10];
+        private T[] _value = new T[10];
         private int _count = 0;
 
-        public void AddValue(int value)
+        public void AddValue(T value)
         {
             if (_count == 10)
             {
@@ -17,7 +17,7 @@ namespace Generics_Console
             _count++;
         }
 
-        public int Fist()
+        public T Fist()
         {
             if (_count == 0)
             {
